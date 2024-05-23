@@ -7,20 +7,20 @@
 body {
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 5fr;
-    grid-template-rows: minmax(150px, 1fr) 5fr;
-    height: 100vh;
+    grid-template-rows: minmax(150px, auto) 5fr;
+    /* height: 100vh; */
 }
 
 .sidebar {
     background-color: #1992d4;
-    display: grid;
-    grid-column: 1;
+    /* display: grid; */
+    /* grid-column: 1; */
     grid-row: 1 / 3
 }
 
 header {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
 }
 
     .main-header {
@@ -34,9 +34,24 @@ header {
     }
 
 .sidebar {
-    display: grid;
-    grid-template-rows: minmax(100px, 1fr) 8fr;
+    /* display: grid; */
+    /* grid-template-rows: 50px auto; */
 }
+
+    .sidebar .img-and-link {
+        background-color: red;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar .img-and-link h1 {
+        display: inline-block;
+        font-size: 1.5em;
+    }
+
+    .sidebar svg {
+        vertical-align: middle;
+    }
 
     .navigation {
         display: grid;
@@ -63,13 +78,14 @@ main {
 
     .projects {
         grid-row: 1 / 3;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-template-rows: minmax(20px, 40px);
-        gap: 1.5em;
+
     }
 
-        .projects .header {
+        .projects .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5em;
+            height: 100%;
         }
 
         .projects .card {
@@ -79,7 +95,7 @@ main {
         grid-column: 1 / -1;
     }
 
-li, .logo {
+li, .dashboard {
     color: white;
 }
 
