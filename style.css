@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -34,18 +34,23 @@ header {
     }
 
 .sidebar {
-    /* display: grid; */
-    /* grid-template-rows: 50px auto; */
+    padding-left: 1em;
+}
+
+.navigation .menu,
+.navigation .settings {
+    padding-bottom: 2em;
 }
 
     .sidebar .img-and-link {
-        background-color: red;
         display: flex;
         align-items: center;
+        padding: 2em 0 2em 0;
     }
 
     .sidebar .img-and-link h1 {
         display: inline-block;
+        color: white;
         font-size: 1.5em;
     }
 
@@ -55,6 +60,16 @@ header {
 
     .navigation {
         display: grid;
+    }
+
+    li p {
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    li {
+        padding-bottom: 0.8em;
+        list-style: none;
     }
 
 main {
@@ -97,6 +112,9 @@ main {
 
 li, .dashboard {
     color: white;
+}
+
+svg {
 }
 
 @media (max-width: 600px) {
