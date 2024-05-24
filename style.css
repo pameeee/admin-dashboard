@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -7,7 +7,8 @@
 body {
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 5fr;
-    /* grid-template-rows: minmax(100px, 1fr) 50fr; */
+    /* grid-template-rows: minmax(100px, 1fr) 50fr; */ 
+    /* Remove rows or use grid-auto-rows: max content so elements won't be unnecessarily stretched out */
 }
 
 header {
@@ -163,12 +164,7 @@ main {
             background-color: white;
             border-radius: 2%;
             border-left: 0.25em solid #e1b232;
-        }
-
-        .announcements .container {
-            /* background-color: red;
-            height: 100%;
-            grid-auto-rows: max-content; */
+            padding: 2.5em 1em;
         }
 
 @media (max-width: 600px) {
