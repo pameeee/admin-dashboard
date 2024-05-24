@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0;
     padding: 0;
 }
@@ -7,7 +7,7 @@
 body {
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 5fr;
-    grid-template-rows: minmax(100px, 1fr) 8fr;
+    /* grid-template-rows: minmax(100px, 1fr) 50fr; */
 }
 
 header {
@@ -137,6 +137,8 @@ main {
     /* grid-template-rows: auto; */
     padding: 2em;
     gap: 1.5em;
+    /* height: 100%; */
+    grid-auto-rows: max-content;
 }
 
     .projects {
@@ -147,7 +149,26 @@ main {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1.5em;
+            /* height: 100%; */
+            grid-auto-rows: max-content;
+
+        }
+
+        main > * > p {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .projects .card {
+            background-color: white;
+            border-radius: 2%;
+            border-left: 0.25em solid #e1b232;
+        }
+
+        .announcements .container {
+            /* background-color: red;
             height: 100%;
+            grid-auto-rows: max-content; */
         }
 
 @media (max-width: 600px) {
