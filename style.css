@@ -142,6 +142,24 @@ main {
     grid-auto-rows: max-content;
 }
 
+    .announcements .container {
+        background-color: white;
+        border-radius: 2%;
+        padding: 0.5em 1.8em;
+    }
+
+    .announcements .container .card {
+        padding: 1.5em 0;
+    }
+
+        .announcements .container .card p {
+        }
+
+    .announcements .container .card:nth-child(2) {
+        border-top: 1px solid rgb(184, 184, 184);
+        border-bottom: 1px solid rgb(184, 184, 184);
+    } 
+
     .projects {
         grid-row: 1 / 3;
     }
