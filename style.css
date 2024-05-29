@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0;
     padding: 0;
 }
@@ -77,7 +77,11 @@ header {
         .secondary-header .user {
             display: grid;
             grid-template-columns: auto 1fr;
-            gap: 0.5em;
+            /* gap: 0.5em; */
+        }
+
+        .secondary-header .user > * {
+            padding-left: 0.5em;
         }
 
         .secondary-header .user img {
@@ -88,6 +92,23 @@ header {
             width: 4em;
             clip-path: circle();
         }
+
+        .hi-there {
+            align-self: self-end;
+        }
+
+        button {
+            /* display: inline-block; */
+            /* position: relative; */
+            padding:  15px 20px;
+            color: #1992d4;
+            /* font-size: 18px; */
+            /* text-align: center; */
+            /* text-decoration: none; */
+            /* font-weight: 700; */
+            /* margin: 0 auto 20px; */
+            border-radius: 20px;
+          }
 
 .sidebar {
     background-color: #1992d4;
