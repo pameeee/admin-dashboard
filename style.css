@@ -151,15 +151,13 @@ main {
         background-color: white;
         border-radius: 2%;
         padding: 1rem 1rem;
-        /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-        /* min-width: 250px; */
     }
 
         .trending .container .card {
             display: grid;
             grid-template-columns: auto auto;
-            /* grid-template-rows: 1fr 1fr; */
             align-items: center;
+            padding: 0.5rem 0;
         }
 
             .trending .container .card img {
@@ -168,7 +166,6 @@ main {
                 background-color: #ffb4b4;
                 justify-self: center;
                 max-height: 45px;
-                /* transform: scale(0.7, 0.7); */
                 clip-path: circle();
             }
 
@@ -183,7 +180,6 @@ main {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1.5em;
-            /* height: 100%; */
             grid-auto-rows: max-content;
 
         }
