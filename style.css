@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -7,13 +7,10 @@
 body {
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 5fr;
-    /* grid-template-rows: minmax(100px, 1fr) 50fr; */ 
-    /* Remove rows or use grid-auto-rows: max content so elements won't be unnecessarily stretched out */
 }
 
 header {
     display: grid;
-    /* grid-template-rows: 1fr 1fr; */
 }
 
     .main-header {
@@ -77,7 +74,8 @@ header {
         .secondary-header .user {
             display: grid;
             grid-template-columns: auto 1fr;
-            /* gap: 0.5em; */
+            white-space: nowrap;
+            
         }
 
         .secondary-header .user > * {
@@ -88,7 +86,6 @@ header {
             grid-column: 1 / 2;
             grid-row: 1 / 3;
             background-color: #1992d4;
-            /* justify-self: center; */
             width: 4em;
             clip-path: circle();
         }
@@ -97,23 +94,27 @@ header {
             align-self: self-end;
         }
 
-        button {
-            /* display: inline-block; */
-            /* position: relative; */
-            padding:  15px 20px;
-            color: #1992d4;
-            /* font-size: 18px; */
-            /* text-align: center; */
-            /* text-decoration: none; */
-            /* font-weight: 700; */
-            /* margin: 0 auto 20px; */
+        .secondary-header .buttons {
+            min-width: 18em;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .secondary-header .buttons button {
+            display: inline-block;
+            text-align: center;
+            padding: 0.7em 0;
+            margin: 1em;
+            background-color: #1992d4;
+            color: white;
+            width: 6em;
             border-radius: 20px;
+            border: 0px;
           }
 
 .sidebar {
     background-color: #1992d4;
-    /* display: grid; */
-    /* grid-column: 1; */
     grid-row: 1 / 3;
     padding-left: 1em;
 }
@@ -162,11 +163,8 @@ main {
     background-color: #e2e8f0;
     grid-template-columns: 3fr minmax(250px, 1fr);
     grid-template-rows: 1fr 1fr;
-    /* grid-template-rows: auto; */
     padding: 2em 1em;
     gap: 1.5em;
-    /* height: 100%; */
-    /* grid-auto-rows: max-content; */
 }
 
     .announcements .container {
@@ -232,6 +230,10 @@ main {
             border-left: 0.25em solid #e1b232;
             padding: 2.5em 1em;
         }
+
+button {
+    cursor: pointer;
+}
 
 @media (max-width: 600px) {
 
